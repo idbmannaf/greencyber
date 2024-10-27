@@ -1,0 +1,243 @@
+:root {
+  --primary-color: #4caf50; /* Example primary color */
+  --primary-color-section-bg: #4caf507d; /* Example primary color */
+  --bg-color: #f4f4f4; /* Example background color */
+}
+a {
+  text-decoration: none;
+}
+
+/* Top bar Start */
+.topbar {
+  background-color: black;
+  padding: 5px 0px;
+}
+.topbar a {
+  color: #fff;
+  font-size: 14px;
+}
+
+.topbar a > i {
+  color: var(--primary-color);
+}
+
+/* Top bar End */
+
+/* Navbar Start*/
+.navbar .dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+.navbar-brand img {
+  height: 50px;
+  /* Adjust logo size */
+}
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-transparent a.nav-link {
+  color: black !important;
+}
+nav.navbar.navbar-expand-lg.navbar-light.bg-transparent a.nav-link:hover,
+nav.navbar.navbar-expand-lg.navbar-light.bg-transparent a.nav-link.active {
+  color: var(--primary-color) !important;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-transparent.scrolled {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important;
+  background-color: #000000e0 !important;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-transparent.scrolled a.nav-link {
+  color: #fff !important;
+}
+
+.navbar-collapse {
+  flex-basis: 100% !important;
+  flex-grow: 1;
+  align-items: center;
+}
+.toggleHamburger {
+  color: var(--primary-color);
+  font-size: 2rem;
+}
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none;
+}
+.navbar a.nav-link {
+  font-weight: 600;
+}
+nav.navbar.navbar-expand-lg.navbar-light.bg-transparent.scrolled.fixed-top
+  a.nav-link:hover {
+  color: var(--primary-color) !important;
+}
+nav.navbar.navbar-expand-lg.navbar-light.bg-transparent.scrolled.fixed-top
+  a.nav-link.active {
+  color: var(--primary-color) !important;
+}
+
+.dropdown-item:hover {
+  color: var(--primary-color) !important;
+}
+/* Navbar End*/
+
+/*  Hero section Start */
+#hero {
+  background-image: url("../images/hero-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* height: 100vh; */
+}
+.welcomeTitle {
+  color: rgba(0, 128, 0, 0.315);
+}
+.divider {
+  padding: 1rem 0px;
+}
+.divider-separetor {
+  border-top: 4px solid var(--primary-color);
+  width: 26%;
+  border-radius: 25%;
+}
+.hero-contents {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 10px;
+}
+
+/*  Hero section End */
+
+/* Our Services Start  */
+
+.service-section {
+  padding: 60px 0;
+  background-image: url("../images/bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  /* height: 100vh; */
+  background-color: var(--primary-color-section-bg);
+}
+
+.service-box {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  text-align: center;
+  background-color: white;
+  transition: transform 0.3s ease;
+  padding: 20px;
+}
+
+.service-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #28a745;
+  margin-top: 15px;
+}
+
+svg {
+  width: 60px;
+  height: 60px;
+  /* fill: black; */
+  transition: transform 0.3s;
+}
+
+.service-box:hover svg {
+  /* fill: var(--primary-color); */
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* Protfolios */
+.portfolio-section {
+  padding: 60px 0;
+  background-color: #f3f4f6;
+}
+
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.1);
+}
+
+.portfolio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+  opacity: 1;
+}
+
+.portfolio-overlay h4 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.portfolio-overlay p {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.portfolio-overlay .btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.portfolio-overlay .btn:hover {
+  background-color: #218838;
+}
+
+footer {
+  background-color: #343a40;
+  /* Dark background */
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
