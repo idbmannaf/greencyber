@@ -78,10 +78,10 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link " aria-current="page" href="#services">Services</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <!-- Dropdown menu on hover -->
+
+                    <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Services
@@ -91,12 +91,15 @@
                             <li><a class="dropdown-item" href="#">Cybersecurity</a></li>
                             <li><a class="dropdown-item" href="#">Cloud Solutions</a></li>
                         </ul>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="./teams.html">Teams</a>
                     </li>
                 </ul>
             </div>
@@ -147,7 +150,7 @@
     <!-- Hero Section End -->
 
     <!-- Our Services Section -->
-    <section class=" service-section">
+    <section class="service-section" id="services">
         <div class="container">
             <h2 class="text-center mb-5 text-white font-weight-bold">Our Services</h2>
             <div class="row g-4">
@@ -382,9 +385,9 @@
         </div>
     </section>
     <!-- Portfolio Section -->
-    <section class="portfolio-section ">
+    <section class="portfolio-section " id="portfolio">
         <div class="container">
-            <h2 class="text-center mb-5">Our Portfolio</h2>
+            <h2 class="text-center mb-5 text-white">Our Portfolio</h2>
             <div class="row g-4">
                 <!-- Portfolio Item 1 -->
                 <div class="col-md-4">
@@ -461,60 +464,34 @@
     <!-- Client Section -->
     <section id="clients" class="py-5">
         <div class="container text-center">
-            <h2 class="mb-4">Our Clients</h2>
+            <h2 class="mb-4 font-weight-bold">Our Clients</h2>
             <p class="mb-5">We are proud to work with some of the most prestigious companies in the
                 industry. Below is a
                 list of our valued clients who trust us for their cybersecurity solutions.</p>
-            <div class="row">
-                <div class="col-md-3 col-6 mb-4">
-                    <div class="client-logo animate__animated animate__fadeInUp">
-                        <img src="https://via.placeholder.com/150x50.png?text=Client+1" alt="Client 1"
-                            class="img-fluid">
-                    </div>
+
+            <div class="client_list">
+                <div class="client">
+                    <img src="./assets/images/clients/sarbs.png" height="80px" alt="" class="client-image img-fluid">
                 </div>
-                <div class="col-md-3 col-6 mb-4">
-                    <div class="client-logo animate__animated animate__fadeInUp" style="animation-delay: 0.1s;">
-                        <img src="https://via.placeholder.com/150x50.png?text=Client+2" alt="Client 2"
-                            class="img-fluid">
-                    </div>
+
+                <div class="client">
+                    <img src="./assets/images/clients/OS_CLiCKS_Ltd.png" height="80px" alt=""
+                        class="client-image img-fluid">
                 </div>
-                <div class="col-md-3 col-6 mb-4">
-                    <div class="client-logo animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
-                        <img src="https://via.placeholder.com/150x50.png?text=Client+3" alt="Client 3"
-                            class="img-fluid">
-                    </div>
+
+
+                <div class="client">
+                    <img src="./assets/images/clients/cloudloops_logo.jpeg" height="80px" alt=""
+                        class="client-image img-fluid">
                 </div>
-                <div class="col-md-3 col-6 mb-4">
-                    <div class="client-logo animate__animated animate__fadeInUp" style="animation-delay: 0.3s;">
-                        <img src="https://via.placeholder.com/150x50.png?text=Client+4" alt="Client 4"
-                            class="img-fluid">
-                    </div>
-                </div>
-                <div class="col-md-3 col-6 mb-4">
-                    <div class="client-logo animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
-                        <img src="https://via.placeholder.com/150x50.png?text=Client+5" alt="Client 5"
-                            class="img-fluid">
-                    </div>
-                </div>
-                <div class="col-md-3 col-6 mb-4">
-                    <div class="client-logo animate__animated animate__fadeInUp" style="animation-delay: 0.5s;">
-                        <img src="https://via.placeholder.com/150x50.png?text=Client+6" alt="Client 6"
-                            class="img-fluid">
-                    </div>
-                </div>
-                <div class="col-md-3 col-6 mb-4">
-                    <div class="client-logo animate__animated animate__fadeInUp" style="animation-delay: 0.6s;">
-                        <img src="https://via.placeholder.com/150x50.png?text=Client+7" alt="Client 7"
-                            class="img-fluid">
-                    </div>
-                </div>
-                <div class="col-md-3 col-6 mb-4">
-                    <div class="client-logo animate__animated animate__fadeInUp" style="animation-delay: 0.7s;">
-                        <img src="https://via.placeholder.com/150x50.png?text=Client+8" alt="Client 8"
-                            class="img-fluid">
-                    </div>
+
+
+                <div class="client">
+                    <img src="./assets/images/clients/multi.jpg" height="80px" alt="" class="client-image img-fluid">
                 </div>
             </div>
+
+
         </div>
     </section>
 

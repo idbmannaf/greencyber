@@ -127,12 +127,17 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-transparent.scrolled.fixed-top
   border-radius: 10px;
   text-align: center;
   background-color: white;
-  transition: transform 0.3s ease;
+  border-bottom: 5px solid transparent;
+  transition: transform 0.4s ease;
   padding: 20px;
 }
-
 .service-box:hover {
-  transform: translateY(-10px);
+  background: transparent
+    linear-gradient(130deg, var(--primary-color) 0%, #2aa2ff00 42%) 0% 0%
+    no-repeat padding-box;
+  border-bottom: 5px solid var(--primary-color);
+  border-radius: 15px 15px 6px 6px !important;
+  background-color: white !important;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -165,11 +170,25 @@ svg {
     transform: scale(1.1);
   }
 }
+/* Projects Start*/
+#projects {
+  padding: 60px 0;
+  background-image: url("../images/hero-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
+/* Projects End*/
 /* Protfolios */
 .portfolio-section {
   padding: 60px 0;
-  background-color: #f3f4f6;
+  background-image: url("../images/dots-vector-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  /* height: 100vh; */
+  background-color: var(--primary-color-section-bg);
 }
 
 .portfolio-item {
@@ -231,6 +250,96 @@ svg {
 
 .portfolio-overlay .btn:hover {
   background-color: #218838;
+}
+
+/* Client  */
+
+.client_list {
+  display: grid;
+  grid-template-columns: 1fr repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.client {
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+  padding: 20px; /* Padding around each client */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px; /* Rounded corners */
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.client:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+/* Optional: Add animation for entrance */
+.client {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s forwards; /* Animation when the element comes into view */
+}
+
+img.client-image {
+  height: 80px !important;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* # Team Section  */
+#myTeam {
+  padding: 60px;
+  background-image: url("/assets/images/dots-vector-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-color: var(--primary-color-section-bg); */
+}
+.team_head {
+  text-align: center;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+.team-card {
+  background-color: #14253c;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+  transform: scale(1.05);
+}
+
+.team-card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: var(--primary-color);
+  /* Twitter blue */
 }
 
 footer {
