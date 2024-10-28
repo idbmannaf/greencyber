@@ -180,7 +180,33 @@ svg {
 }
 
 /* Projects End*/
-/* Protfolios */
+/* Service Domain */
+.protfolio-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  background-color: white;
+  border-bottom: 5px solid transparent;
+  transition: transform 0.4s ease;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.protfolio-card:hover {
+  background: transparent
+    linear-gradient(130deg, var(--primary-color) 0%, #2aa2ff00 42%) 0% 0%
+    no-repeat padding-box;
+  border-bottom: 5px solid var(--primary-color);
+  border-radius: 15px 15px 6px 6px !important;
+  background-color: white !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.protfolio-title {
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
 .portfolio-section {
   padding: 60px 0;
   background-image: url("../images/dots-vector-background.png");
@@ -406,7 +432,7 @@ img.client-image {
   background-color: #14253c;
   border-radius: 15px;
   padding: 20px;
-  text-align: center;
+  /* text-align: center; */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
   color: #fff;
