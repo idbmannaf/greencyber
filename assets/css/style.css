@@ -91,7 +91,8 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-transparent.scrolled.fixed-top
   /* height: 100vh; */
 }
 .welcomeTitle {
-  color: rgba(0, 128, 0, 0.315);
+  color: var(--primary-color);
+  font-weight: 700;
 }
 .divider {
   padding: 1rem 0px;
@@ -401,7 +402,8 @@ img.client-image {
   font-weight: bold;
 }
 .team-card {
-  background-color: #14253c;
+  background-color: white;
+
   border-radius: 15px;
   padding: 20px;
   text-align: center;
@@ -464,4 +466,18 @@ footer {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+.project-card {
+  background: linear-gradient(
+    to right,
+    var(--primary-color-section-bg) 50%,
+    #ffffff 50%
+  );
+  background-size: 200% 100%;
+  transition: background-position 0.5s ease;
+}
+
+.project-card:hover {
+  background-position: -100% 0;
 }
