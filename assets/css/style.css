@@ -249,10 +249,63 @@ svg {
 }
 
 .portfolio-overlay .btn:hover {
-  background-color: #218838;
+  background-color: var();
+}
+/* Mind Section */
+
+.mind {
+  padding: 60px 0px;
+  background-color: #000000e0 !important;
+  color: #fff;
+  text-align: center;
 }
 
-/* Client  */
+.letsTalk {
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  background-color: transparent;
+  padding: 0.4em 1.5em 0.4em 1em;
+  border-left: 1px solid #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.letsTalk::before,
+.letsTalk::after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  transition: width 0.3s ease;
+}
+
+.letsTalk::before {
+  top: 0;
+  left: 0;
+  height: 1px;
+  width: 30%;
+}
+
+.letsTalk::after {
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 30%;
+}
+
+.letsTalk:hover::before,
+.letsTalk:hover::after {
+  width: 100%;
+}
+
+.letsTalk:hover {
+  border-right: 1px solid #fff;
+}
+
+/* Client  Section*/
 
 .client_list {
   display: grid;
@@ -340,6 +393,31 @@ img.client-image {
 .social-icons a:hover {
   color: var(--primary-color);
   /* Twitter blue */
+}
+
+#contacts {
+  background-image: url("/assets/images/dots-vector-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 0px;
+}
+.sectionDesign {
+  background-color: #14253c;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  color: #fff;
+}
+
+#contacts label {
+  margin-bottom: 10px;
+}
+
+#about {
+  padding: 60px 0px;
 }
 
 footer {

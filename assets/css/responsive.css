@@ -21,4 +21,7 @@
   .hero p {
     font-size: 1rem;
   }
+  footer {
+    text-align: center;
+  }
 }
