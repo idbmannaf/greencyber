@@ -178,6 +178,14 @@ svg {
   background-position: center;
   background-repeat: no-repeat;
 }
+.project-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.project-card a {
+  color: black;
+}
 
 /* Projects End*/
 /* Service Domain */
@@ -200,6 +208,9 @@ svg {
   border-radius: 15px 15px 6px 6px !important;
   background-color: white !important;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.protfolio-card ul {
+  line-height: 25px;
 }
 
 .protfolio-title {
