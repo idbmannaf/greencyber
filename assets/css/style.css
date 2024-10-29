@@ -343,6 +343,51 @@ svg {
   border-right: 1px solid #fff;
 }
 
+.letsTalkT {
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+  background-color: transparent;
+  padding: 0.4em 1.5em 0.4em 1em;
+  border-left: 1px solid black;
+  border-radius: 5px;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.letsTalkT::before,
+.letsTalkT::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  transition: width 0.3s ease;
+}
+
+.letsTalkT::before {
+  top: 0;
+  left: 0;
+  height: 1px;
+  width: 30%;
+}
+
+.letsTalkT::after {
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 30%;
+}
+
+.letsTalkT:hover::before,
+.letsTalkT:hover::after {
+  width: 100%;
+}
+
+.letsTalkT:hover {
+  border-right: 1px solid black;
+}
+
 /* Client  Section*/
 
 .client_list {
@@ -448,26 +493,77 @@ img.client-image {
   color: var(--primary-color);
   /* Twitter blue */
 }
-
+/* Contact Section Container */
 #contacts {
-  background-image: url("/assets/images/dots-vector-background.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 60px 0px;
-}
-.sectionDesign {
-  background-color: #14253c;
-  border-radius: 15px;
-  padding: 20px;
-  /* text-align: center; */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease;
-  color: #fff;
+  padding: 80px 0;
+  background: #f9f9f9;
+  color: #333;
 }
 
-#contacts label {
-  margin-bottom: 10px;
+.sectionDesign {
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+}
+
+/* Form Styling */
+#contacts form label {
+  font-weight: 600;
+  color: #333;
+}
+
+.form-control {
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #1e88e5;
+  box-shadow: 0px 0px 5px rgba(30, 136, 229, 0.5);
+}
+
+.btn-success {
+  background-color: #1e88e5;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+}
+
+.btn-success:hover {
+  background-color: #0d47a1;
+}
+
+/* Contact Details */
+#contacts h2 {
+  color: #2d3e50;
+  font-weight: bold;
+}
+
+#contacts p {
+  font-size: 15px;
+  color: #555;
+}
+
+#contacts strong {
+  color: #1e88e5;
+}
+
+/* Icon and Contact Info */
+#contacts .contact-info i {
+  color: #1e88e5;
+  font-size: 1.2em;
+  margin-right: 8px;
+}
+
+#contacts .contact-info p {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 5px 0;
 }
 
 /* Container and section styling */
