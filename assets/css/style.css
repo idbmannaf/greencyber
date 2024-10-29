@@ -657,6 +657,11 @@ footer a:hover {
   text-decoration: underline;
 }
 
+.footer-icon {
+  color: white;
+  text-decoration: none !important;
+}
+
 .project-card {
   background: linear-gradient(
     to right,
