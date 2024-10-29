@@ -402,8 +402,11 @@ img.client-image {
   font-weight: bold;
 }
 .team-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
   background-color: white;
-
   border-radius: 15px;
   padding: 20px;
   text-align: center;
@@ -467,8 +470,86 @@ img.client-image {
   margin-bottom: 10px;
 }
 
+/* Container and section styling */
 #about {
-  padding: 60px 0px;
+  padding: 80px 0;
+  background: linear-gradient(135deg, #e3f2fd, #ffffff);
+  color: #333;
+}
+
+.sectionDesign {
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+}
+
+/* Typography styling */
+#about h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #2d3e50;
+  margin-bottom: 20px;
+}
+
+#about p {
+  line-height: 1.7;
+  color: #555;
+}
+
+.mission-content,
+.vission-content {
+  padding-top: 20px;
+}
+
+#about ul {
+  padding-left: 20px;
+  list-style: none;
+}
+
+#about ul li {
+  font-size: 16px;
+  padding: 8px 0;
+  position: relative;
+  color: #333;
+  padding-left: 25px;
+}
+
+#about ul li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #1e88e5;
+  font-size: 18px;
+}
+
+/* Mission and Vision blocks */
+#about .mission,
+#about .vission {
+  padding: 30px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+#about .mission:hover,
+#about .vission:hover {
+  transform: translateY(-5px);
+}
+
+/* Button Styling */
+#about a.btn-learn-more {
+  background-color: #1e88e5;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+#about a.btn-learn-more:hover {
+  background-color: #0d47a1;
 }
 
 footer {
