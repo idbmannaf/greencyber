@@ -196,10 +196,13 @@
             </div>
         </div>
     </footer>
+    <!-- <button onclick="sendEmail()">Click</button> -->
     <!-- Footer  -->
 
     <!-- Bootstrap 5 JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
     <script>
         window.addEventListener('scroll', function () {
             const navbar = document.querySelector('.navbar');
@@ -211,6 +214,35 @@
                 navbar.classList.remove('fixed-top');
             }
         });
+    </script>
+
+    <script>
+        // Initialize EmailJS with your User ID
+        (function () {
+            emailjs.init({
+                publicKey: "4bhWxm5VNhqIFdB-R",
+            });
+        })();
+
+        // Function to send an email
+        function sendEmail() {
+            let emailParams = {
+                to_name: "ABC", // Name of the recipient
+                from_name: "From Name Here", // Change this to your name
+                message: "Hello, this is a test message!", // Message body
+                reply_to: "your_email@example.com", // Optional: your email address
+                to_email: "mannaf500@gmail.com" // Set the recipient email address
+            };
+
+            emailjs.send("service_q9peivo", "template_3xotx6b", emailParams)
+                .then(response => {
+                    console.log("SUCCESS!", response.status, response.text);
+                    alert("Email sent successfully!");
+                }, error => {
+                    console.log("FAILED...", error);
+                    alert("Failed to send email.");
+                });
+        }
     </script>
 </body>
 
